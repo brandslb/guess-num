@@ -5,15 +5,21 @@
 
 import random
 r = random.randint(1, 100)
+n = 0
 while True :
 	g = input('終極密碼數字多少?')
 	g = int(g)
 	if g == r :
 		print('真狗屎運')
+		break
 	elif g < r :
 		print('比答案小')
 	elif g > r :
 		print('比答案大')
-		
+	n = n + 1
+	print('這是你猜', n, '次 小嫩逼' )
+	
+
+
 
 
